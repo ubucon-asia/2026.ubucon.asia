@@ -1,0 +1,64 @@
+---
+import Navigation from "./Navigation.astro";
+import { getSiteMetadata } from "../config/site";
+import { getLocalizedPath, useTranslations } from "../i18n/ui";
+import HeroImage from "../assets/uca25photo.png";
+const { locale } = Astro.props;
+const t = useTranslations(locale) as (key: string) => string;
+const metadata = getSiteMetadata(locale);
+---
+
+<main>
+    <Navigation locale={locale} />
+
+    <section class="p-section--hero">
+        <div class="row--50-50-on-large">
+            <div class="col">
+                <h1 class="u-no-margin--bottom">
+                    {metadata.title}<br />
+                    {metadata.subtitle}
+                </h1>
+                <p class="p-heading--2">
+                    {metadata.date}
+                </p>
+                <p class="p-heading--2">
+                    {metadata.venue}
+                </p>
+            </div>
+            <div class="col">
+                <div class="p-section--shallow">
+                    <p>
+                        UbuCon Asia is a community-organized conference
+                        connecting Ubuntu community in Asia. Join us in Taipei
+                        for two days memorable of conference that connects
+                        enthusiast, engineers, creators, researchers,
+                        entrepreneurs and contributors across Asia.
+                    </p>
+                    <p>
+                        This year's UbuCon Asia will be a joint event with
+                        COSCUP. Enabling you to experience the Ubuntu community
+                        across Asia and the largest FOSS community gathering in
+                        Taiwan!
+                    </p>
+                </div>
+
+                <div class="p-section--shallow">
+                    <div class="p-cta-block u-no-padding--bottom">
+                        <a class="p-button--positive" href="#">Learn more</a>
+
+                        <a class="" href="#">Contact us ›</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="p-image-container--cinematic is-cover">
+                    <img
+                        class="p-image-container__image"
+                        src={HeroImage.src}
+                        alt="alt-text"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
