@@ -7,7 +7,7 @@ import mdx from '@astrojs/mdx';
 export default defineConfig({
   integrations: [mdx()],
   i18n: {
-    locales: ["en", "ko"],
+    locales: ["en", "zh-tw"],
     defaultLocale: "en",
     routing: {
       prefixDefaultLocale: false

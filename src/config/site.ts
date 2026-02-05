@@ -27,12 +27,12 @@ export const siteMetadata: Record<Locale, SiteMetadata> = {
     subtitle: "@ COSCUP",
     description: "Aug 8-9 | Co-hosted with COSCUP | NTUST, Taipei, Taiwan",
   },
-  ko: {
-    title: "우부콘 아시아 2026",
-    date: "August 8-9",
-    venue: "NTUST, Taipei, Taiwan",
+  "zh-tw": {
+    title: "UbuCon Asia 2026",
+    date: "8 月 8-9 日",
+    venue: "國立臺北科技大學",
     subtitle: "@ COSCUP",
-    description: "Aug 8-9 | Co-hosted with COSCUP | NTUST, Taipei, Taiwan",
+    description: "8 月 8-9 日 | 與 COSCUP 共同主辦 | 國立臺北科技大學",
   },
 } as const;
 
@@ -50,9 +50,9 @@ export const heroCtas: Record<Locale, HeroCtas> = {
       href: "https://coscup.org/2026",
     },
   },
-  ko: {
+  "zh-tw": {
     primary: {
-      label: "Call for proposals",
+      label: "徵稿",
       href: "/cfp",
     },
     secondary: {
@@ -62,8 +62,9 @@ export const heroCtas: Record<Locale, HeroCtas> = {
   },
 } as const;
 
-export const getHeroCtas = (locale?: Locale) =>
-  heroCtas[locale ?? defaultLocale] ?? heroCtas[defaultLocale];
+export function getHeroCtas(locale?: Locale) {
+  return heroCtas[locale ?? defaultLocale] ?? heroCtas[defaultLocale];
+}
 
 export const siteConfig = {
   cfpLink: {
