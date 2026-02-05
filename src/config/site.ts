@@ -9,6 +9,16 @@ export type SiteMetadata = {
   description: string;
 };
 
+export type HeroCta = {
+  label: string;
+  href: string;
+};
+
+export type HeroCtas = {
+  primary: HeroCta;
+  secondary: HeroCta;
+};
+
 export const siteMetadata: Record<Locale, SiteMetadata> = {
   en: {
     title: "UbuCon Asia 2026",
@@ -22,19 +32,44 @@ export const siteMetadata: Record<Locale, SiteMetadata> = {
     date: "August 8-9",
     venue: "NTUST, Taipei, Taiwan",
     subtitle: "@ COSCUP",
-    description:
-      "오픈 소스를 만들고, 배포하고, 전파하는 사람들을 위한 지역 커뮤니티 모임입니다.",
+    description: "Aug 8-9 | Co-hosted with COSCUP | NTUST, Taipei, Taiwan",
   },
 } as const;
 
 export const getSiteMetadata = (locale?: Locale) =>
   siteMetadata[locale ?? defaultLocale] ?? siteMetadata[defaultLocale];
 
+export const heroCtas: Record<Locale, HeroCtas> = {
+  en: {
+    primary: {
+      label: "Call for proposals",
+      href: "/cfp",
+    },
+    secondary: {
+      label: "COSCUP ›",
+      href: "https://coscup.org/2026",
+    },
+  },
+  ko: {
+    primary: {
+      label: "Call for proposals",
+      href: "/cfp",
+    },
+    secondary: {
+      label: "COSCUP ›",
+      href: "https://coscup.org/2026",
+    },
+  },
+} as const;
+
+export const getHeroCtas = (locale?: Locale) =>
+  heroCtas[locale ?? defaultLocale] ?? heroCtas[defaultLocale];
+
 export const siteConfig = {
   cfpLink: {
     link: "https://events.canonical.com/event/146/abstracts/",
     socialCardImage: "",
-  }
+  },
 } as const;
 
 export type SiteConfig = typeof siteConfig;

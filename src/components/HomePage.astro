@@ -1,11 +1,12 @@
 ---
 import Navigation from "./Navigation.astro";
-import { getSiteMetadata } from "../config/site";
+import { getHeroCtas, getSiteMetadata } from "../config/site";
 import { getLocalizedPath, useTranslations } from "../i18n/ui";
 import HeroImage from "../assets/uca25photo.png";
 const { locale } = Astro.props;
 const t = useTranslations(locale) as (key: string) => string;
 const metadata = getSiteMetadata(locale);
+const heroCtas = getHeroCtas(locale);
 ---
 
 <main>
@@ -44,9 +45,13 @@ const metadata = getSiteMetadata(locale);
 
                 <div class="p-section--shallow">
                     <div class="p-cta-block u-no-padding--bottom">
-                        <a class="p-button--positive" href="#">Learn more</a>
+                        <a class="p-button--positive" href={heroCtas.primary.href}>
+                            {heroCtas.primary.label}
+                        </a>
 
-                        <a class="" href="#">Contact us ›</a>
+                        <a href={heroCtas.secondary.href}>
+                            {heroCtas.secondary.label}
+                        </a>
                     </div>
                 </div>
             </div>
