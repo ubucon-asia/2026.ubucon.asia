@@ -5,6 +5,7 @@ export const defaultLocale: Locale = "en";
 
 export const ui = {
   en: {
+    localeName: "English",
     ctaPrimary: "Get updates",
     ctaSecondary: "Call for proposals",
     navHome: "Home",
@@ -30,6 +31,7 @@ export const ui = {
     travelNotice: "Travel details - coming soon."
   },
   "zh-tw": {
+    localeName: "繁體中文",
     ctaPrimary: "接收更新",
     ctaSecondary: "徵稿",
     navHome: "首頁",
@@ -59,6 +61,7 @@ export const ui = {
 export type UiKey =
   | "ctaPrimary"
   | "ctaSecondary"
+  | "localeName"
   | "navHome"
   | "navCfp"
   | "navSponsorship"

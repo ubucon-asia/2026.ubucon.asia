@@ -1,15 +1,21 @@
 ---
 import { navigation } from "../config/navigation";
 import { getSiteMetadata } from "../config/site";
-import { getLocalizedPath, locales, useTranslations } from "../i18n/ui";
+import {
+    getLocalizedPath,
+    locales,
+    ui,
+    useTranslations,
+} from "../i18n/ui";
 
 const { locale } = Astro.props;
 const t = useTranslations(locale) as (key: string) => string;
 const metadata = getSiteMetadata(locale);
+const localeNames = ui as unknown as Record<string, { localeName: string }>;
 
 const languageLinks = locales.map((item) => ({
     locale: item,
-    label: item.toUpperCase(),
+    label: localeNames[item].localeName,
     href: getLocalizedPath("/", item),
     isCurrent: item === locale,
 }));
