@@ -16,10 +16,7 @@ export type HeroCta = {
   href: string;
 };
 
-export type HeroCtas = {
-  primary: HeroCta;
-  secondary: HeroCta;
-};
+export type HeroCtas = HeroCta[];
 
 export const siteMetadata: Record<Locale, SiteMetadata> = {
   en: {
@@ -42,26 +39,34 @@ export const getSiteMetadata = (locale?: Locale) =>
   siteMetadata[locale ?? defaultLocale] ?? siteMetadata[defaultLocale];
 
 export const heroCtas: Record<Locale, HeroCtas> = {
-  en: {
-    primary: {
-      label: "Call for proposals",
+  en: [
+    {
+      label: "Call for proposals (TBD)",
       href: "/cfp",
     },
-    secondary: {
+    {
+      label: "Chat with participants",
+      href: "https://docs.ubucon.asia/chat/",
+    },
+    {
       label: "COSCUP ›",
       href: "https://coscup.org/2026",
     },
-  },
-  "zh-tw": {
-    primary: {
-      label: "徵稿",
+  ],
+  "zh-tw": [
+    {
+      label: "徵稿 (TBD)",
       href: "/cfp",
     },
-    secondary: {
+    {
+      label: "與參與者聊天",
+      href: "https://docs.ubucon.asia/chat/",
+    },
+    {
       label: "COSCUP ›",
       href: "https://coscup.org/2026",
     },
-  },
+  ],
 } as const;
 
 export function getHeroCtas(locale?: Locale) {

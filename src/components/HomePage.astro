@@ -38,16 +38,13 @@ const heroCtas = getHeroCtas(locale);
 
                 <div class="p-section--shallow">
                     <div class="p-cta-block u-no-padding--bottom">
-                        <a
-                            class="p-button--positive"
-                            href={heroCtas.primary.href}
-                        >
-                            {heroCtas.primary.label}
-                        </a>
-
-                        <a href={heroCtas.secondary.href}>
-                            {heroCtas.secondary.label}
-                        </a>
+                        {
+                            heroCtas.map((cta, index) => (
+                                <a class="p-button--positive" href={cta.href}>
+                                    {cta.label}
+                                </a>
+                            ))
+                        }
                     </div>
                 </div>
             </div>
