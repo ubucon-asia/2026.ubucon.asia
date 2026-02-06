@@ -1,5 +1,7 @@
 import { defaultLocale } from "../i18n/ui";
 import type { Locale } from "../i18n/ui";
+import UbuConAsiaCommitteeLogo from "../assets/UbuConAsiaCommittee.svg";
+import OpenSourceCollectiveLogo from "../assets/oscollective.webp";
 
 export type SiteMetadata = {
   title: string;
@@ -65,6 +67,85 @@ export const heroCtas: Record<Locale, HeroCtas> = {
 export function getHeroCtas(locale?: Locale) {
   return heroCtas[locale ?? defaultLocale] ?? heroCtas[defaultLocale];
 }
+
+export type FooterLogo = {
+  alt: string;
+  src: string;
+  href?: string;
+  maxHeight?: number;
+  paddingTop?: number;
+};
+
+export type FooterLink = {
+  label: string;
+  href: string;
+};
+
+export type FooterContent = {
+  legalHtml: string;
+  links: FooterLink[];
+  logos: FooterLogo[];
+  backToTopLabel: string;
+};
+
+const footerLogosShared: FooterLogo[] = [
+  {
+    alt: "UbuCon Asia Committee",
+    src: UbuConAsiaCommitteeLogo.src,
+    href: "https://www.ubucon.asia",
+  },
+  {
+    alt: "Open Source Collective",
+    src: OpenSourceCollectiveLogo.src,
+    href: "https://www.oscollective.org/",
+  },
+];
+
+export const footerContent: Record<Locale, FooterContent> = {
+  en: {
+    legalHtml:
+      "&copy; 2026-Present UbuCon Asia Committee. Ubuntu and Canonical are registered trademarks of Canonical Ltd. Unless otherwise noted, content licensed under CC BY 4.0. Source code under MIT.",
+    links: [
+      {
+        label: "Contact us with Email",
+        href: "mailto:contact@ubucon.asia",
+      },
+      {
+        label: "See source code",
+        href: "https://github.com/ubucon-asia/2026.ubucon.asia",
+      },
+      {
+        label: "UbuCon Asia in other years",
+        href: "https://www.ubucon.asia",
+      },
+    ],
+    logos: footerLogosShared,
+    backToTopLabel: "Go to the top of the page",
+  },
+  "zh-tw": {
+    legalHtml:
+      "&copy; 2026-Present UbuCon Asia Committee。 Ubuntu 與 Canonical 為 Canonical Ltd. 的註冊商標。除非另有說明，內容以 CC BY 4.0 授權，原始碼以 MIT 授權。",
+    links: [
+      {
+        label: "Email 聯絡我們",
+        href: "mailto:contact@ubucon.asia",
+      },
+      {
+        label: "查看原始碼",
+        href: "https://github.com/ubucon-asia/2026.ubucon.asia",
+      },
+      {
+        label: "UbuCon Asia 其他年份",
+        href: "https://www.ubucon.asia",
+      },
+    ],
+    logos: footerLogosShared,
+    backToTopLabel: "回到頁面頂端",
+  },
+};
+
+export const getFooterContent = (locale?: Locale) =>
+  footerContent[locale ?? defaultLocale] ?? footerContent[defaultLocale];
 
 export const siteConfig = {
   cfpLink: {
