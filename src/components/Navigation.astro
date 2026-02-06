@@ -1,12 +1,7 @@
 ---
 import { navigation } from "../config/navigation";
 import { getSiteMetadata } from "../config/site";
-import {
-    getLocalizedPath,
-    locales,
-    ui,
-    useTranslations,
-} from "../i18n/ui";
+import { getLocalizedPath, locales, ui, useTranslations } from "../i18n/ui";
 
 const { locale } = Astro.props;
 const t = useTranslations(locale) as (key: string) => string;
@@ -28,7 +23,7 @@ const buildHref = (item: { path: string; hash?: string }) => {
 const navId = "global-navigation";
 ---
 
-<header id={navId} class="p-navigation">
+<header id={navId} class="p-navigation is-dark">
     <div class="p-navigation__row--25-75">
         <div class="p-navigation__banner">
             <div class="p-navigation__tagged-logo">
@@ -43,7 +38,9 @@ const navId = "global-navigation";
                             alt=""
                         />
                     </div>
-                    <span class="p-navigation__logo-title">{metadata.title}</span>
+                    <span class="p-navigation__logo-title"
+                        >{metadata.title}</span
+                    >
                 </a>
             </div>
             <a

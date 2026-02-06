@@ -12,7 +12,7 @@ const heroCtas = getHeroCtas(locale);
 <main>
     <Navigation locale={locale} />
 
-    <section class="p-section--hero">
+    <section class="p-section--hero p-strip is-dark">
         <div class="row--50-50-on-large">
             <div class="col">
                 <h1 class="u-no-margin--bottom">
@@ -38,7 +38,10 @@ const heroCtas = getHeroCtas(locale);
 
                 <div class="p-section--shallow">
                     <div class="p-cta-block u-no-padding--bottom">
-                        <a class="p-button--positive" href={heroCtas.primary.href}>
+                        <a
+                            class="p-button--positive"
+                            href={heroCtas.primary.href}
+                        >
                             {heroCtas.primary.label}
                         </a>
 
