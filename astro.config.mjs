@@ -5,7 +5,7 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  base: "/2026.ubucon.asia",
+  base: "/",
   integrations: [mdx()],
   i18n: {
     locales: ["en", "zh-tw"],
