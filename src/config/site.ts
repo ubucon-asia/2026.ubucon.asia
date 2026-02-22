@@ -1,5 +1,6 @@
 import { defaultLocale } from "../i18n/ui";
 import type { Locale } from "../i18n/ui";
+import COSCUPLogo from "../assets/coscup.svg";
 import UbuConAsiaCommitteeLogo from "../assets/UbuConAsiaCommittee.svg";
 import OpenSourceCollectiveLogo from "../assets/oscollective.webp";
 
@@ -94,6 +95,11 @@ export type FooterContent = {
 };
 
 const footerLogosShared: FooterLogo[] = [
+  {
+    alt: "COSCUP Team",
+    src: COSCUPLogo.src,
+    href: "https://coscup.org",
+  },
   {
     alt: "UbuCon Asia Committee",
     src: UbuConAsiaCommitteeLogo.src,
