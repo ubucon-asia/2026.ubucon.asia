@@ -3,6 +3,7 @@ import type { Locale } from "../i18n/ui";
 import COSCUPLogo from "../assets/coscup.svg";
 import UbuConAsiaCommitteeLogo from "../assets/UbuConAsiaCommittee.svg";
 import OpenSourceCollectiveLogo from "../assets/oscollective.webp";
+import UbuntuTaiwanLogo from "../assets/UbuntuTaiwan.svg";
 
 export type SiteMetadata = {
   title: string;
@@ -95,6 +96,11 @@ export type FooterContent = {
 };
 
 const footerLogosShared: FooterLogo[] = [
+  {
+    alt: "Ubuntu Taiwan LoCo Team",
+    src: UbuntuTaiwanLogo.src,
+    href: "https://discourse.ubuntu.com/t/ubuntu-taiwan-local-community-ubuntu-tw/39883",
+  },
   {
     alt: "COSCUP Team",
     src: COSCUPLogo.src,
