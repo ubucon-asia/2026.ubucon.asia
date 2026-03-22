@@ -1,0 +1,51 @@
+---
+import type { MarkdownLayoutProps } from "astro";
+import Shell from "./Shell.astro";
+
+type Props = MarkdownLayoutProps<{
+  title: string;
+  description?: string;
+}>;
+
+const { frontmatter } = Astro.props as Props;
+---
+
+<style is:global>
+  table {
+    display: block;
+    overflow-x: auto;
+    word-break: keep-all;
+  }
+
+  .mdx-content {
+    max-width: 48rem;
+  }
+
+  .mdx-content :where(img) {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .mdx-content :where(pre) {
+    overflow-x: auto;
+  }
+}</style>
+
+<Shell title={frontmatter.title} description={frontmatter.description}>
+  <main class="p-section p-strip is-shallow is-dark">
+    <div class="row">
+      <article class="mdx-content">
+        <header>
+          <h1>{frontmatter.title}</h1>
+          {
+            frontmatter.description ? (
+              <p class="p-heading--5">{frontmatter.description}</p>
+            ) : null
+          }
+          <hr class="p-rule" />
+        </header>
+        <slot />
+      </article>
+    </div>
+  </main>
+</Shell>

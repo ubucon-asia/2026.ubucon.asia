@@ -1,0 +1,18 @@
+---
+import Layout from "./Layout.astro";
+import Navigation from "../components/Navigation.astro";
+import { getLocaleFromUrl } from "../i18n/ui";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props as Props;
+const locale = getLocaleFromUrl(Astro.url);
+---
+
+<Layout title={title} description={description} lang={locale}>
+  <Navigation locale={locale} />
+  <slot />
+</Layout>
