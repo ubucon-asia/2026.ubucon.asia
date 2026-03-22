@@ -31,6 +31,16 @@ export const navigation: NavigationSettings = {
         },
       ],
     },
+    {
+      key: "navTravel",
+      items: [
+        {
+          key: "navTravelGrant",
+          path: "/travel/travel-grant",
+          hash: "#travel-grant",
+        },
+      ],
+    },
   ],
   secondary: [],
 } as const;

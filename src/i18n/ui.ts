@@ -10,6 +10,7 @@ export const ui = {
     ctaSecondary: "Call for proposals",
     navHome: "Home",
     navCfp: "CFP",
+    navTravelGrant: "Travel grant",
     navSponsorship: "Sponsorship",
     navTravel: "Travel",
     navUpdates: "Updates",
@@ -43,7 +44,7 @@ export const ui = {
     ctaPrimaryNotice: "Get updates - coming soon.",
     ctaSecondaryNotice: "Call for proposals - coming soon.",
     sponsorshipNotice: "Sponsorship details - coming soon.",
-    travelNotice: "Travel details - coming soon."
+    travelNotice: "Travel details - coming soon.",
   },
   "zh-tw": {
     localeName: "中文",
@@ -51,6 +52,7 @@ export const ui = {
     ctaSecondary: "徵稿",
     navHome: "首頁",
     navCfp: "CFP",
+    navTravelGrant: "Travel grant",
     navSponsorship: "贊助",
     navTravel: "旅遊資訊",
     navUpdates: "最新消息",
@@ -84,8 +86,8 @@ export const ui = {
     ctaPrimaryNotice: "接收更新 - 即將推出。",
     ctaSecondaryNotice: "徵稿 - 即將推出。",
     sponsorshipNotice: "贊助資訊 - 即將推出。",
-    travelNotice: "旅遊資訊 - 即將推出。"
-  }
+    travelNotice: "旅遊資訊 - 即將推出。",
+  },
 } as const;
 
 export type UiKey =
@@ -96,6 +98,7 @@ export type UiKey =
   | "navCfp"
   | "navSponsorship"
   | "navTravel"
+  | "navTravelGrant"
   | "navUpdates"
   | "navProgram"
   | "navMenu"
