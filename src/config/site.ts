@@ -31,9 +31,9 @@ export const siteMetadata: Record<Locale, SiteMetadata> = {
   "zh-tw": {
     title: "UbuCon Asia 2026",
     date: "8 月 8-9 日",
-    venue: "國立臺北科技大學",
+    venue: "國立臺灣科技大學",
     subtitle: "@ COSCUP",
-    description: "8 月 8-9 日 | 與 COSCUP 共同主辦 | 國立臺北科技大學",
+    description: "8 月 8-9 日 | 與 COSCUP 共同主辦 | 國立臺灣科技大學",
   },
 } as const;
 
