@@ -15,6 +15,8 @@ export const ui = {
     navTravel: "Venue & Travel",
     navVisas: "Visas and other travel requirements",
     navUpdates: "Updates",
+    navAbout: "About",
+    navCoC: "Code of Conduct",
     navProgram: "Program",
     navMenu: "Menu",
     navClose: "Close",
@@ -59,6 +61,8 @@ export const ui = {
     navVisas: "簽證與其他旅遊需求",
     navUpdates: "最新消息",
     navProgram: "議程",
+    navAbout:"About",
+    navCoC: "Code of Conduct",
     navMenu: "選單",
     navClose: "關閉",
     sectionHighlights: "重點內容",
@@ -97,6 +101,8 @@ export type UiKey =
   | "ctaSecondary"
   | "localeName"
   | "navHome"
+  | "navAbout"
+  | "navCoC"
   | "navCfp"
   | "navSponsorship"
   | "navTravel"
