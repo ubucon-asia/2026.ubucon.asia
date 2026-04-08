@@ -22,6 +22,16 @@ export type NavigationSettings = {
 export const navigation: NavigationSettings = {
   primary: [
     {
+      key: "navAbout",
+      items: [
+        {
+          key: "navCoC",
+          path: "/code-of-conduct",
+          hash: "",
+        },
+      ],
+    },
+    {
       key: "navProgram",
       items: [
         {
