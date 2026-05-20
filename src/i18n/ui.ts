@@ -21,6 +21,7 @@ export const ui = {
     navProgram: "Program",
     navMenu: "Menu",
     navClose: "Close",
+    navSponsors: "Our Sponsors",
     navBecomeSponsor: "Become a sponsor",
     navImportantDates: "Important dates",
     navExhibitions: "Exhibitions",
@@ -78,6 +79,7 @@ export const ui = {
     navCoC: "Code of Conduct",
     navMenu: "選單",
     navClose: "關閉",
+    navSponsors: "我們的贊助商",
     navBecomeSponsor: "加入贊助",
     navImportantDates: "重要日期",
     navExhibitions: "展覽",
@@ -129,6 +131,8 @@ export type UiKey =
   | "navAboutTheEvent"
   | "navCoC"
   | "navCfp"
+  | "navSponsors"
+  | "navBecomeSponsor"
   | "navSponsorship"
   | "navTravel"
   | "navTravelGrant"
