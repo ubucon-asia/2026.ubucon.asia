@@ -10,7 +10,12 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
+    "@astrojs/react": "^5.0.4",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
     "astro": "^5.17.1",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
     "sass": "^1.97.3",
     "vanilla-framework": "^4.42.0"
   }
