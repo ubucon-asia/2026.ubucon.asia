@@ -11,15 +11,19 @@ export const ui = {
     navHome: "Home",
     navCfp: "CFP",
     navTravelGrant: "Travel grant",
-    navSponsorship: "Sponsorship",
+    navSponsorship: "Sponsors",
     navTravel: "Venue & Travel",
     navVisas: "Visas and other travel requirements",
     navUpdates: "Updates",
     navAbout: "About",
+    navAboutTheEvent: "About the event",
     navCoC: "Code of Conduct",
     navProgram: "Program",
     navMenu: "Menu",
     navClose: "Close",
+    navBecomeSponsor: "Become a sponsor",
+    navImportantDates: "Important dates",
+    navExhibitions: "Exhibitions",
     sectionHighlights: "Highlights",
     highlightCommunity: "Community-led sessions",
     highlightPractical: "Practical workshops",
@@ -43,6 +47,14 @@ export const ui = {
     contributeBoothDescription:
       "Would you like to help spread Ubuntu and its community to new people face to face? Do you have any projects built with or for Ubuntu you would like to showcase? Consider volunteering at the booth!",
     contributeBoothLinkLabel: "Call for Booth Volunteers",
+    sponsorTitle: "Our Sponsors",
+    sponsorDescription:
+      "UbuCon Asia depends on sponsor support to keep the event accessible and community focused. Meet the organizations that help make this conference possible.",
+    sponsorLearnMore: "Learn more",
+    volunteerTitle: "Volunteer with us",
+    volunteerDescription:
+      "UbuCon Asia is powered by community volunteers. Join our team to support the event, speakers, and attendees.",
+    volunteerLinkLabel: "Contact the volunteer team",
     languageLabel: "Language",
     ctaPrimaryNotice: "Get updates - coming soon.",
     ctaSecondaryNotice: "Call for proposals - coming soon.",
@@ -61,10 +73,14 @@ export const ui = {
     navVisas: "簽證與其他旅遊需求",
     navUpdates: "最新消息",
     navProgram: "議程",
-    navAbout:"About",
+    navAbout:"關於",
+    navAboutTheEvent: "關於活動",
     navCoC: "Code of Conduct",
     navMenu: "選單",
     navClose: "關閉",
+    navBecomeSponsor: "加入贊助",
+    navImportantDates: "重要日期",
+    navExhibitions: "展覽",
     sectionHighlights: "重點內容",
     highlightCommunity: "社群主導的議程",
     highlightPractical: "實作工作坊",
@@ -88,6 +104,14 @@ export const ui = {
     contributeBoothDescription:
       "你想透過面對面的交流，向更多新朋友介紹 Ubuntu 與 Ubuntu 社群嗎？你是否有使用 Ubuntu 或為 Ubuntu 打造的專案想展示？歡迎考慮成為攤位志工！",
     contributeBoothLinkLabel: "攤位志工招募",
+    sponsorTitle: "贊助夥伴",
+    sponsorDescription:
+      "UbuCon Asia 依靠贊助夥伴的支持，讓活動持續對社群開放與友善。認識支持本次活動的夥伴。",
+    sponsorLearnMore: "瞭解更多",
+    volunteerTitle: "成為志工",
+    volunteerDescription:
+      "UbuCon Asia 由社群志工推動。歡迎加入我們，一起支援活動、講者與參與者。",
+    volunteerLinkLabel: "聯絡志工團隊",
     languageLabel: "語言",
     ctaPrimaryNotice: "接收更新 - 即將推出。",
     ctaSecondaryNotice: "徵稿 - 即將推出。",
@@ -102,6 +126,7 @@ export type UiKey =
   | "localeName"
   | "navHome"
   | "navAbout"
+  | "navAboutTheEvent"
   | "navCoC"
   | "navCfp"
   | "navSponsorship"
@@ -129,6 +154,15 @@ export type UiKey =
   | "contributeBoothTitle"
   | "contributeBoothDescription"
   | "contributeBoothLinkLabel"
+  | "sponsorTitle"
+  | "sponsorDescription"
+  | "sponsorLearnMore"
+  | "volunteerTitle"
+  | "volunteerDescription"
+  | "volunteerLinkLabel"
+  | "navBecomeSponsor"
+  | "navImportantDates"
+  | "navExhibitions"
   | "languageLabel"
   | "ctaPrimaryNotice"
   | "ctaSecondaryNotice"
