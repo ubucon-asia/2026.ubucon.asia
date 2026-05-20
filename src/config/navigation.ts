@@ -56,6 +56,10 @@ export const navigation: NavigationSettings = {
       key: "navSponsorship",
       items: [
         {
+          key: "navSponsors",
+          path: "/sponsors/our-sponsors",
+        },
+        {
           key: "navBecomeSponsor",
           path: "/sponsors/become-a-sponsor",
         },
