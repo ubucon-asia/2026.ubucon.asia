@@ -29,10 +29,10 @@ const { frontmatter } = Astro.props as Props;
   .mdx-content :where(pre) {
     overflow-x: auto;
   }
-}</style>
+</style>
 
 <Shell title={frontmatter.title} description={frontmatter.description}>
-  <main class="p-section p-strip is-shallow is-dark">
+  <main class="p-section p-strip is-shallow">
     <div class="row">
       <article class="mdx-content">
         <header>
