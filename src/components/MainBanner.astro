@@ -1,0 +1,46 @@
+---
+import { getHeroCtas, getSiteMetadata } from "../config/site";
+import { useTranslations } from "../i18n/ui";
+import HeroLogo from "../assets/uca26logo.svg";
+const { locale } = Astro.props;
+const t = useTranslations(locale) as (key: string) => string;
+const metadata = getSiteMetadata(locale);
+const heroCtas = getHeroCtas(locale);
+---
+
+<section class="p-suru--fan-bottom">
+  <div class="u-fixed-width">
+    <div class="row--75-25">
+      <div class="col">
+        <h1>{metadata.title}</h1>
+        <h2>{metadata.date}</h2>
+        <h2>{metadata.venue}</h2>
+        <div class="p-section--shallow">
+          <p>{t("heroDescriptionPrimary")}</p>
+          <p>{t("heroDescriptionSecondary")}</p>
+        </div>
+        <div class="p-cta-block">
+          {heroCtas.map((cta) => (
+            <a class="p-button--positive" href={cta.href}>
+              {cta.label}
+            </a>
+          ))}
+        </div>
+      </div>
+      <div class="col">
+        <div class="p-image-container p-image-container--square-on-small p-image-container--square-on-medium p-image-container--2-3-on-large">
+          <img class="p-image-container__image hero-logo" src={HeroLogo.src} alt="UCA 26 logo" />
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<style>
+  .hero-logo {
+    display: block;
+    max-width: 100%;
+    margin: 4rem auto 0;
+  }
+</style>
