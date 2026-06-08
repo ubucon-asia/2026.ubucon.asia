@@ -169,6 +169,10 @@ export const siteConfig = {
     link: "https://events.canonical.com/event/146/abstracts/",
     socialCardImage: "",
   },
+  ExhLink: {
+    link: "https://blog.coscup.org/2026/03/coscup-x-ubucon-asia-2026-first-wave-of.html",
+    socialCardImage: "",
+  },
 } as const;
 
 export type SiteConfig = typeof siteConfig;

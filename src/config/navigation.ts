@@ -44,7 +44,7 @@ export const navigation: NavigationSettings = {
         },
         {
           key: "navExhibitions",
-          path: "/programs/exhibitions",
+          path: "/exhibition",
         },
       ],
     },
