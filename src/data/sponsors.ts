@@ -1,8 +1,11 @@
 import logoPlaceHolder from "../assets/sponsors/logo_placeholder.svg";
 import ima from "../assets/sponsors/Gold/IMA.png";
-import qnap from "../assets/sponsors/Silver/QNAP.png";
+import esun from "../assets/sponsors/Gold/esunbank.png";
+import cfh from "../assets/sponsors/Gold/cfh.png";
+import qnap from "../assets/sponsors/Bronze/QNAP.png";
 import kktix from "../assets/sponsors/Bronze/KKTIX.png"
 import onlyoffice from "../assets/sponsors/Bronze/ONLYOFFICE.png"
+
 
 //Sponsor data structure and types
 export type SponsorItem = {
@@ -25,38 +28,38 @@ export type SponsorLevel = {
 };
 
 export const sponsors: SponsorLevel[] = [
-  {
-    sponsorLevelName: "Titanium",
-    sizeOnLargeScreen: 6,
-    sizeOnMediumScreen: 6,
-    sizeOnSmallScreen: 6,
-    showPopup: true,
-    list: [
-      // {
-      //   name: "Become a sponsor!",
-      //   logoUrl: logoPlaceHolder.src,
-      //   url: "/sponsors/become-a-sponsor",
-      //   description:
-      //     "This sponsor slot is currently empty and available! Would like to support our event and become our sponsor? Click 'Visit website' button to join us today!",
-      // },
-    ],
-  },
-  {
-    sponsorLevelName: "Diamond",
-    sizeOnLargeScreen: 4,
-    sizeOnMediumScreen: 4,
-    sizeOnSmallScreen: 3,
-    showPopup: true,
-    list: [
-      // {
-      //   name: "Become a sponsor!",
-      //   logoUrl: logoPlaceHolder.src,
-      //   url: "/sponsors/become-a-sponsor",
-      //   description:
-      //     "This sponsor slot is currently empty and available! Would like to support our event and become our sponsor? Click 'Visit website' button to join us today!",
-      // },
-    ],
-  },
+  // {
+  //   sponsorLevelName: "Titanium",
+  //   sizeOnLargeScreen: 6,
+  //   sizeOnMediumScreen: 6,
+  //   sizeOnSmallScreen: 6,
+  //   showPopup: true,
+  //   list: [
+  //     // {
+  //     //   name: "Become a sponsor!",
+  //     //   logoUrl: logoPlaceHolder.src,
+  //     //   url: "/sponsors/become-a-sponsor",
+  //     //   description:
+  //     //     "This sponsor slot is currently empty and available! Would like to support our event and become our sponsor? Click 'Visit website' button to join us today!",
+  //     // },
+  //   ],
+  // },
+  // {
+  //   sponsorLevelName: "Diamond",
+  //   sizeOnLargeScreen: 4,
+  //   sizeOnMediumScreen: 4,
+  //   sizeOnSmallScreen: 3,
+  //   showPopup: true,
+  //   list: [
+  //     // {
+  //     //   name: "Become a sponsor!",
+  //     //   logoUrl: logoPlaceHolder.src,
+  //     //   url: "/sponsors/become-a-sponsor",
+  //     //   description:
+  //     //     "This sponsor slot is currently empty and available! Would like to support our event and become our sponsor? Click 'Visit website' button to join us today!",
+  //     // },
+  //   ],
+  // },
   {
     sponsorLevelName: "Gold",
     sizeOnLargeScreen: 3,
@@ -79,7 +82,21 @@ export const sponsors: SponsorLevel[] = [
         logoUrl: ima.src,
         url: "https://ima.org/",
         descriptionKey: "gsponsordescriptionIMA",
-      }
+      },
+      {
+        name: "E.SUN Bank",
+        logoUrl: esun.src,
+        url: "https://www.esunbank.com/zh-tw/personal",
+        description:
+          "",
+      },
+      {
+        name: "Cathay Financial Holdings",
+        logoUrl: cfh.src,
+        url: "https://www.cathayholdings.com/holdings/brand/fintech",
+        description:
+          "",
+      },
     ],
   },
   {
@@ -96,13 +113,7 @@ export const sponsors: SponsorLevel[] = [
       //   description:
       //     "This sponsor slot is currently empty and available! Would like to support our event and become our sponsor? Click 'Visit website' button to join us today!",
       // },
-      {
-        name: "QNAP Systems, Inc.",
-        logoUrl: qnap.src,
-        url: "https://www.qnap.com/zh-tw",
-        description:
-          "",
-      },
+
     
     ],
   },
@@ -132,6 +143,13 @@ export const sponsors: SponsorLevel[] = [
         name: "ONLYOFFICE",
         logoUrl: onlyoffice.src,
         url: "https://www.onlyoffice.com/",
+        description:
+          "",
+      },
+      {
+        name: "QNAP Systems, Inc.",
+        logoUrl: qnap.src,
+        url: "https://www.qnap.com/zh-tw",
         description:
           "",
       },
