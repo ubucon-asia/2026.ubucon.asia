@@ -7,7 +7,7 @@ export const committeeMembers = [
   },
   {
     name: "Khairul Aizat Bin Kamarudzzaman",
-    team: "Global team & Ubuntu Malaysia, Ubuntu Membership Board",
+    team: "Global team & Ubuntu Malaysia, Ubuntu Member",
     role: "",
     profileImageUrl: "https://avatars.githubusercontent.com/u/405473?v=4",
   },
@@ -19,7 +19,7 @@ export const committeeMembers = [
   },
   {
     name: "Aryan Kaushik",
-    team: "Global team & Ubuntu India, GNOME Foundation member, GNOME UG Delhi-NCR",
+    team: "Global team & Ubuntu Member",
     role: "Content, and Travel support",
     profileImageUrl: "https://avatars.githubusercontent.com/u/34372791?v=4",
   },

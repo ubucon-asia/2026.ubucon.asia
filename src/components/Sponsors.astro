@@ -1,6 +1,10 @@
 ---
 import { sponsors } from "../data/sponsors";
+import { useTranslations, defaultLocale } from "../i18n/ui";
 import SponsorLogoAndModal from "../components/SponsorLogoAndModal.tsx";
+
+const locale = Astro.props.locale || defaultLocale;
+const t = useTranslations(locale) as (key: string) => string;
 ---
 
 <style>
@@ -31,9 +35,9 @@ import SponsorLogoAndModal from "../components/SponsorLogoAndModal.tsx";
                   class={`col-${level.sizeOnLargeScreen} col-medium-${level.sizeOnMediumScreen} col-small-${level.sizeOnSmallScreen}`}
                 >
                   <SponsorLogoAndModal
-                    name={item.name}
+                    name={item.nameKey ? t(item.nameKey) : item.name ?? ""}
                     logoImageSrc={item.logoUrl}
-                    description={item.description}
+                    description={item.descriptionKey ? t(item.descriptionKey) : item.description ?? ""}
                     url={item.url}
                     level={level.sponsorLevelName}
                     partnerTag={item?.partnerTag}

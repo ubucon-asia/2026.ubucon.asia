@@ -61,6 +61,9 @@ export const ui = {
     ctaSecondaryNotice: "Call for proposals - coming soon.",
     sponsorshipNotice: "Sponsorship details - coming soon.",
     travelNotice: "Travel details - coming soon.",
+    // Sponsors Details
+    gsponsorTitleIMA: "Information Management Association",
+    gsponsordescriptionIMA: "Founded in 1982, IMA is one of Taiwan's longest-established IT professional organizations, dedicated to strengthening Taiwan's digital competitiveness. IMA remains committed to advancing IT value, fostering cross-sector collaboration, and positioning Taiwan at the forefront of the global digital and AI landscape.",
   },
   "zh-tw": {
     localeName: "中文",
@@ -119,6 +122,9 @@ export const ui = {
     ctaSecondaryNotice: "徵稿 - 即將推出。",
     sponsorshipNotice: "贊助資訊 - 即將推出。",
     travelNotice: "旅遊資訊 - 即將推出。",
+    // Sponsors Details
+    gsponsorTitleIMA: "中華民國資訊經理人協會",
+    gsponsordescriptionIMA: "IMA成立於1982年，是台灣歷史最悠久的IT專業組織之一，致力於提升台灣的數位競爭力。 IMA始終致力於提升IT價值，促進跨產業合作，並將台灣定位在全球數位和人工智慧領域的前沿。",
   },
 } as const;
 
@@ -171,7 +177,9 @@ export type UiKey =
   | "ctaPrimaryNotice"
   | "ctaSecondaryNotice"
   | "sponsorshipNotice"
-  | "travelNotice";
+  | "travelNotice"
+  | "gsponsorTitleIMA"
+  | "gsponsordescriptionIMA";
 
 export const getLocaleFromUrl = (url: URL): Locale => {
   const pathLocale = url.pathname.split("/")[1];
