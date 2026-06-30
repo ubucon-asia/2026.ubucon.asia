@@ -3,9 +3,11 @@ import ima from "../assets/sponsors/Gold/IMA.png";
 import esun from "../assets/sponsors/Gold/esunbank.png";
 import cfh from "../assets/sponsors/Gold/cfh.png";
 import qnap from "../assets/sponsors/Bronze/QNAP.png";
-import kktix from "../assets/sponsors/Bronze/KKTIX.png"
-import onlyoffice from "../assets/sponsors/Bronze/ONLYOFFICE.png"
-
+import kktix from "../assets/sponsors/Bronze/KKTIX.png";
+import onlyoffice from "../assets/sponsors/Bronze/ONLYOFFICE.png";
+import andes from "../assets/sponsors/Supporter/Andes.png";
+import doit from "../assets/sponsors/SpecialThanks/doit.png";
+import sifive from "../assets/sponsors/SpecialThanks/sifive.png";
 
 //Sponsor data structure and types
 export type SponsorItem = {
@@ -46,9 +48,9 @@ export const sponsors: SponsorLevel[] = [
   // },
   // {
   //   sponsorLevelName: "Diamond",
-  //   sizeOnLargeScreen: 4,
-  //   sizeOnMediumScreen: 4,
-  //   sizeOnSmallScreen: 3,
+  //   sizeOnLargeScreen: 5,
+  //   sizeOnMediumScreen: 5,
+  //   sizeOnSmallScreen: 4,
   //   showPopup: true,
   //   list: [
   //     // {
@@ -99,24 +101,22 @@ export const sponsors: SponsorLevel[] = [
       },
     ],
   },
-  {
-    sponsorLevelName: "Silver",
-    sizeOnLargeScreen: 2,
-    sizeOnMediumScreen: 2,
-    sizeOnSmallScreen: 1,
-    showPopup: true,
-    list: [
-      // {
-      //   name: "Become a sponsor!",
-      //   logoUrl: logoPlaceHolder.src,
-      //   url: "/sponsors/become-a-sponsor",
-      //   description:
-      //     "This sponsor slot is currently empty and available! Would like to support our event and become our sponsor? Click 'Visit website' button to join us today!",
-      // },
-
-    
-    ],
-  },
+  // {
+  //   sponsorLevelName: "Silver",
+  //   sizeOnLargeScreen: 3,
+  //   sizeOnMediumScreen: 3,
+  //   sizeOnSmallScreen: 2,
+  //   showPopup: true,
+  //   list: [
+  //     // {
+  //     //   name: "Become a sponsor!",
+  //     //   logoUrl: logoPlaceHolder.src,
+  //     //   url: "/sponsors/become-a-sponsor",
+  //     //   description:
+  //     //     "This sponsor slot is currently empty and available! Would like to support our event and become our sponsor? Click 'Visit website' button to join us today!",
+  //     // }, 
+  //   ],
+  // },
 
   {
     sponsorLevelName: "Bronze",
@@ -125,14 +125,7 @@ export const sponsors: SponsorLevel[] = [
     sizeOnSmallScreen: 1,
     showPopup: true,
     list: [
-  //     // {
-  //     //   name: "Become a sponsor!",
-  //     //   logoUrl: logoPlaceHolder.src,
-  //     //   url: "/sponsors/become-a-sponsor",
-  //     //   description:
-  //     //     "This sponsor slot is currently empty and available! Would like to support our event and become our sponsor? Click 'Visit website' button to join us today!",
-      // },
-        {
+      {
         name: "KKTIX",
         logoUrl: kktix.src,
         url: "https://www.kktix.com/",
@@ -155,41 +148,42 @@ export const sponsors: SponsorLevel[] = [
       },
     ],
   },
-  // {
-  //   sponsorLevelName: "Startup",
-  //   sizeOnLargeScreen: 2,
-  //   sizeOnMediumScreen: 2,
-  //   sizeOnSmallScreen: 1,
-  //   showPopup: true,
-  //   list: [
-  //     // {
-  //     //   name: "Become a sponsor!",
-  //     //   logoUrl: logoPlaceHolder.src,
-  //     //   url: "/sponsors/become-a-sponsor",
-  //     //   description: "",
-  //     // },
-  //     // {
-  //     //   name: "Become a sponsor!",
-  //     //   partnerTag: "-Demo Partner",
-  //     //   logoUrl: logoPlaceHolder.src,
-  //     //   url: "/sponsors/become-a-sponsor",
-  //     //   description: "",
-  //     // },
-  //   ],
-  // },
-  // {
-  //   sponsorLevelName: "Supporter",
-  //   sizeOnLargeScreen: 1,
-  //   sizeOnMediumScreen: 1,
-  //   sizeOnSmallScreen: 1,
-  //   showPopup: false,
-  //   list: [
-  //     // {
-  //     //   name: "Become a sponsor!",
-  //     //   logoUrl: logoPlaceHolder.src,
-  //     //   url: "",
-  //     //   description: "",
-  //     // },
-  //   ],
-  // },
+  {
+    sponsorLevelName: "Supporter",
+    sizeOnLargeScreen: 2,
+    sizeOnMediumScreen: 2,
+    sizeOnSmallScreen: 1,
+    showPopup: true,
+    list: [
+      {
+        name: "Andes Technology Corporation",
+        logoUrl: andes.src,
+        url: "https://www.andestech.com/en/",
+        description: "",
+      },
+    ],
+  },
+  {
+    sponsorLevelName: "Special Thanks",
+    sizeOnLargeScreen: 1,
+    sizeOnMediumScreen: 1,
+    sizeOnSmallScreen: 1,
+    showPopup: true,
+    list: [
+      {
+        name: "Department of Information Technology, Taipei City Government",
+        logoUrl: doit.src,
+        // partnerTag: "-Demo Partner",
+        url: "https://doit.gov.taipei",
+        description: "",
+      },
+      {
+        name: "SiFive",
+        logoUrl: sifive.src,
+        // partnerTag: "-Demo Partner",
+        url: "https://www.sifive.com",
+        description: "",
+      },
+    ],
+  },
 ];
