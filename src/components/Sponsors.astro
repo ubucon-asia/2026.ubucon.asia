@@ -1,9 +1,9 @@
 ---
 import { sponsors } from "../data/sponsors";
-import { useTranslations } from "../i18n/ui";
+import { useTranslations, defaultLocale } from "../i18n/ui";
 import SponsorLogoAndModal from "../components/SponsorLogoAndModal.tsx";
 
-const { locale } = Astro.props;
+const locale = Astro.props.locale || defaultLocale;
 const t = useTranslations(locale) as (key: string) => string;
 ---
 
