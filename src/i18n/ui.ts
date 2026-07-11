@@ -69,6 +69,12 @@ export const ui = {
     gsponsordescriptionESunBank: "E.SUN Bank, established in 1992 and named after Taiwan’s highest mountain, is dedicated to customer-centric values and committed to developing financial strategies centered around technology and ESG. With more than 1,300 technology professionals forming a technology team responsible for overall digital development, AI applications, IT research, and information security management, we are the first bank in Taiwan to deeply integrate AI into various businesses and the first bank to build our core system using cloud-native technology and a microservices architecture. In recent years, E.SUN Bank has demonstrated outstanding comprehensive performance, winning a total of 8 major awards at the 12th Elite Awards for Taiwan Banking Excellence, which maintain our industry-leading record in total awards received. From Taiwan to Asia, E.SUN Bank steadily grows with flexible strategies and efficient execution, creating sustained value for our customers and moving toward a future of sustainability.",
     gsponsorTitleCFH: "Cathay Financial Holdings",
     gsponsordescriptionCFH: "Cathay Financial Holdings (FHC) is committed to being a technology company with finance at its core. We actively develop and adopt international innovations to build cutting-edge platforms and services through digitalization, data, and technology.By integrating group-level resources, Cathay FHC leverages its strengths in continuous innovation, intelligent applications, and technological leadership to set a benchmark for development environments. At the same time, we continue expanding across the Asia-Pacific, aligning with global trends to become the leading financial institution in the region. Driven by a data-driven culture and a highly collaborative matrix organization, Cathay FHC is dedicated to shaping the future of finance.",
+    bsponsorTitleKKTIX: "KKTIX",
+    bsponsorDescriptionKKTIX: "As Taiwan and Hong Kong’s leading platform for event ticketing, registration,and live streaming, KKTIX is dedicated to empowering organizers with reliable technology and seamless event experiences. From technical conferences, open-source community meetups, and educational programs to large-scale forums, live performances, and online events, KKTIX supports events of all sizes and formats. Since its founding in 2010, KKTIX has amassed more than 7 million registered members and proudly supports over 75,000 events annually. The platform provides comprehensive solutions—including event registration, ticketing, payment processing, membership management, and data analytics—enabling organizers to focus on curating impactful content and fostering vibrant communities. KKTIX has a long-standing commitment to driving the growth of technology and open-source communities, partnering with developer ecosystems, user groups, and non-profit organizations to bring people together. We believe that every event serves as a catalyst for knowledge sharing and community building, and that the right tools empower people to focus on learning, collaboration, and creating lasting value.",
+    bsponsorTitleONLYOFFICE: "ONLYOFFICE",
+    bsponsorDescriptionONLYOFFICE: "ONLYOFFICE, an open-source office software project, focuses on advanced and secure office solutions. With over 15 million users worldwide, it is recognized for its innovation in the online office domain. The ONLYOFFICE ecosystem includes collaborative applications such as online editors for text documents, spreadsheets, presentations, forms, and PDFs, along with a room-based collaborative platform. As an international company, ONLYOFFICE has employees and contributors across the globe, with offices located in Singapore, Dallas, Shanghai, Riga, London, Belgrade, Yerevan, and Tashkent.",
+    bsponsorTitleQNAP: "QNAP Systems, Inc.",
+    bsponsorDescriptionQNAP: "QNAP (Quality Network Appliance Provider) is a global leader in software development, hardware design, and in-house manufacturing, delivering solutions that help businesses and individuals securely store, connect, and innovate. We drive breakthroughs in storage, networking, and smart video, and advance an Edge AI strategy that integrates edge-first deployment with cloud collaboration—enabling real-time data analysis, decision-making, and collaboration across diverse environments. QNAP is also a comprehensive cybersecurity brand, embedding data protection, anti-ransomware resilience, immutable storage, and multi-layered security into our solutions. For us, NAS has evolved beyond storage—turning NAS into the platform that drives AI, edge intelligence, and trusted data protection worldwide.",
   },
   "zh-tw": {
     localeName: "中文",
@@ -135,6 +141,12 @@ export const ui = {
     gsponsordescriptionESunBank: "玉山銀行成立於1992年，取名自台灣最高的山，以顧客體驗為核心的理念，致 力於構建科技與綠色雙軸轉型的的金融發展策略。作為數位金融的領導品牌， 玉山銀行擁有超過1300位科技人才，負責整體的數位發展、智能應用、資訊研 發以及資安管理。為臺灣首家銀行將人工智慧深入應用於各項業務，也是首家 銀行以開放的雲端原生技術、微服務架構自建核心系統。近年來玉山銀行展現 卓越的綜合績效，榮獲第十二屆菁業獎共8項大獎，累計歷屆獲奬總數持續領先 金融同業。從台灣到亞洲，玉山以靈活的策略和高效的執行力穩健發展，為顧 客創造持續的價值，邁向永續經營的未來。",
     gsponsorTitleCFH: "國泰金融控股公司",
     gsponsordescriptionCFH: "國泰金控致力成為「以金融為核心的科技公司」，透過數位、數據與技術，積極研發並導入國際前瞻技術，打造創新平台與產品服務。整合集團資源、強化一站式數位金融體驗，國泰金控發揮持續創新與技術領先優勢，樹立技術與開發環境典範。同時，積極佈局海外並接軌國際，深耕大中華與東南亞市場，注入數據驅動文化，以高效協作的矩陣式組織，持續朝「亞太地區最佳金融機構」願景邁進，共創更好的未來金融。",
+    bsponsorTitleKKTIX: "華娛網路娛樂股份有限公司",
+    bsponsorDescriptionKKTIX: "",
+    bsponsorTitleONLYOFFICE: "ONLYOFFICE",
+    bsponsorDescriptionONLYOFFICE: "ONLYOFFICE 是一個國際性的開源專案，由領先的 IT 公司 Ascensio System SIA 開發。目前在中國、新加坡、英國等 7 個國家設有分公司，為全球企業與個人使用者提供高效率的文件處理與協作解決方案，深受網易、百威中國、中信集團、南京大學、中國知網等眾多企業與教育機構的青睞。ONLYOFFICE Docs 是一套功能完整的線上辦公套件，整合了文件編輯、試算表、簡報、可填寫表單以及 PDF 編輯器，並與 Microsoft Office 格式具備高度相容性。此外，還提供數百種格式與樣式設定工具，以及多元的協作功能。",
+    bsponsorTitleQNAP: "威聯通科技股份有限公司",
+    bsponsorDescriptionQNAP: " QNAP 命名源自於高品質網路設備製造商（Quality Network Appliance Provider），我們致力研發軟體應用，匠心優化硬體設計，並設立自有生產線，以提供全面而先進的科技解決方案。QNAP 專注於儲存、網通及智慧視訊產品創新，並持續拓展人工智慧應用，推動 Edge AI 邊緣優先、雲端協作的整合模式，協助客戶在不同場域中即時分析、決策與協同運作，充分發揮數據價值。QNAP 亦是一個全面性的資安品牌，我們將資料保護、防勒索、不可變儲存與多層資安機制融入解決方案中，確保企業營運不中斷並維持長期資料完整性。在 QNAP 的企業藍圖中，NAS 早已突破儲存裝置的框架，更是驅動人工智慧、邊緣運算與資安防護的重要平台，為全球用戶創造更大優勢與價值。",
   },
 } as const;
 
@@ -194,7 +206,13 @@ export type UiKey =
   | "gsponsorTitleESunBank"
   | "gsponsordescriptionESunBank"
   | "gsponsorTitleCFH"
-  | "gsponsordescriptionCFH";
+  | "gsponsordescriptionCFH"
+  | "bsponsorTitleKKTIX"
+  | "bsponsorDescriptionKKTIX"
+  | "bsponsorTitleONLYOFFICE"
+  | "bsponsorDescriptionONLYOFFICE"
+  | "bsponsorTitleQNAP"
+  | "bsponsorDescriptionQNAP";
 
 export const getLocaleFromUrl = (url: URL): Locale => {
   const pathLocale = url.pathname.split("/")[1];
