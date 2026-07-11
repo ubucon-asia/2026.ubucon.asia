@@ -65,6 +65,8 @@ export const ui = {
     // Sponsors Details
     gsponsorTitleIMA: "Information Management Association",
     gsponsordescriptionIMA: "Founded in 1982, IMA is one of Taiwan's longest-established IT professional organizations, dedicated to strengthening Taiwan's digital competitiveness. IMA remains committed to advancing IT value, fostering cross-sector collaboration, and positioning Taiwan at the forefront of the global digital and AI landscape.",
+    gsponsorTitleESunBank: "E.SUN Bank",
+    gsponsordescriptionESunBank: "E.SUN Bank, established in 1992 and named after Taiwan’s highest mountain, is dedicated to customer-centric values and committed to developing financial strategies centered around technology and ESG. With more than 1,300 technology professionals forming a technology team responsible for overall digital development, AI applications, IT research, and information security management, we are the first bank in Taiwan to deeply integrate AI into various businesses and the first bank to build our core system using cloud-native technology and a microservices architecture. In recent years, E.SUN Bank has demonstrated outstanding comprehensive performance, winning a total of 8 major awards at the 12th Elite Awards for Taiwan Banking Excellence, which maintain our industry-leading record in total awards received. From Taiwan to Asia, E.SUN Bank steadily grows with flexible strategies and efficient execution, creating sustained value for our customers and moving toward a future of sustainability.",
   },
   "zh-tw": {
     localeName: "中文",
@@ -127,6 +129,8 @@ export const ui = {
     // Sponsors Details
     gsponsorTitleIMA: "中華民國資訊經理人協會",
     gsponsordescriptionIMA: "IMA成立於1982年，是台灣歷史最悠久的IT專業組織之一，致力於提升台灣的數位競爭力。 IMA始終致力於提升IT價值，促進跨產業合作，並將台灣定位在全球數位和人工智慧領域的前沿。",
+    gsponsorTitleESunBank: "玉山銀行",
+    gsponsordescriptionESunBank: "玉山銀行成立於1992年，取名自台灣最高的山，以顧客體驗為核心的理念，致 力於構建科技與綠色雙軸轉型的的金融發展策略。作為數位金融的領導品牌， 玉山銀行擁有超過1300位科技人才，負責整體的數位發展、智能應用、資訊研 發以及資安管理。為臺灣首家銀行將人工智慧深入應用於各項業務，也是首家 銀行以開放的雲端原生技術、微服務架構自建核心系統。近年來玉山銀行展現 卓越的綜合績效，榮獲第十二屆菁業獎共8項大獎，累計歷屆獲奬總數持續領先 金融同業。從台灣到亞洲，玉山以靈活的策略和高效的執行力穩健發展，為顧 客創造持續的價值，邁向永續經營的未來。",
   },
 } as const;
 
@@ -182,7 +186,9 @@ export type UiKey =
   | "sponsorshipNotice"
   | "travelNotice"
   | "gsponsorTitleIMA"
-  | "gsponsordescriptionIMA";
+  | "gsponsordescriptionIMA"
+  | "gsponsorTitleESunBank"
+  | "gsponsordescriptionESunBank";
 
 export const getLocaleFromUrl = (url: URL): Locale => {
   const pathLocale = url.pathname.split("/")[1];
