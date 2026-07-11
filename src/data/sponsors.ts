@@ -124,25 +124,22 @@ export const sponsors: SponsorLevel[] = [
     showPopup: true,
     list: [
       {
-        name: "KKTIX",
+        nameKey: "bsponsorTitleKKTIX",
         logoUrl: kktix.src,
         url: "https://www.kktix.com/",
-        descriptionKey:
-          "",
-      },
-              {
-        name: "ONLYOFFICE",
-        logoUrl: onlyoffice.src,
-        url: "https://www.onlyoffice.com/",
-        descriptionKey:
-          "",
+        descriptionKey: "bsponsorDescriptionKKTIX",
       },
       {
-        name: "QNAP Systems, Inc.",
+        nameKey: "bsponsorTitleONLYOFFICE",
+        logoUrl: onlyoffice.src,
+        url: "https://www.onlyoffice.com/",
+        descriptionKey: "bsponsorDescriptionONLYOFFICE",
+      },
+      {
+        nameKey: "bsponsorTitleQNAP",
         logoUrl: qnap.src,
         url: "https://www.qnap.com/zh-tw",
-        descriptionKey:
-          "",
+        descriptionKey: "bsponsorDescriptionQNAP",
       },
     ],
   },
