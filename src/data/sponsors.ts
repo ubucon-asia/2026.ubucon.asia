@@ -92,11 +92,10 @@ export const sponsors: SponsorLevel[] = [
         descriptionKey: "gsponsordescriptionESunBank",
       },
       {
-        name: "Cathay Financial Holdings",
+        nameKey: "gsponsorTitleCFH",
         logoUrl: cfh.src,
         url: "https://www.cathayholdings.com/holdings/brand/fintech",
-        descriptionKey:
-          "",
+        descriptionKey: "gsponsordescriptionCFH",
       },
     ],
   },
