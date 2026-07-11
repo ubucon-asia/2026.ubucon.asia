@@ -1,13 +1,13 @@
 import logoPlaceHolder from "../assets/sponsors/logo_placeholder.svg";
-import ima from "../assets/sponsors/Gold/IMA.png";
-import esun from "../assets/sponsors/Gold/esunbank.png";
-import cfh from "../assets/sponsors/Gold/cfh.png";
-import qnap from "../assets/sponsors/Bronze/QNAP.png";
-import kktix from "../assets/sponsors/Bronze/KKTIX.png";
-import onlyoffice from "../assets/sponsors/Bronze/ONLYOFFICE.png";
-import andes from "../assets/sponsors/Supporter/Andes.png";
-import doit from "../assets/sponsors/SpecialThanks/doit.png";
-import sifive from "../assets/sponsors/SpecialThanks/sifive.png";
+import ima from "../assets/sponsors/Gold/IMA.jpg";
+import esun from "../assets/sponsors/Gold/esunbank.jpg";
+import cfh from "../assets/sponsors/Gold/cfh.jpg";
+import qnap from "../assets/sponsors/Bronze/QNAP.jpg";
+import kktix from "../assets/sponsors/Bronze/KKTIX.jpg";
+import onlyoffice from "../assets/sponsors/Bronze/ONLYOFFICE.jpg";
+import andes from "../assets/sponsors/Supporter/Andes.jpg";
+import doit from "../assets/sponsors/SpecialThanks/doit.jpg";
+import sifive from "../assets/sponsors/SpecialThanks/sifive.jpg";
 
 //Sponsor data structure and types
 export type SponsorItem = {
