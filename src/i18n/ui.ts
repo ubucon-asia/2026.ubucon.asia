@@ -229,6 +229,25 @@ export const getLocaleFromUrl = (url: URL): Locale => {
   return defaultLocale;
 };
 
+const localizedPageFiles = import.meta.glob(
+  "../pages/zh-tw/**/*.{astro,md,mdx}",
+  { eager: true },
+);
+
+const supportedLocalizedPaths = new Set<string>(
+  Object.keys(localizedPageFiles).map((filePath) => {
+    const normalized = filePath
+      .replace(/^\.\.\/pages\/zh-tw/, "")
+      .replace(/\.(astro|md|mdx)$/, "");
+
+    if (normalized.endsWith("/index")) {
+      return normalized.slice(0, -"/index".length) || "/";
+    }
+
+    return normalized || "/";
+  }),
+);
+
 export const useTranslations = (locale: Locale) => {
   return (key: UiKey) => ui[locale][key];
 };
@@ -240,4 +259,15 @@ export const getLocalizedPath = (path: string, locale: Locale) => {
   }
 
   return `/${locale}${normalized}`;
+};
+
+export const getLocalizedNavPath = (path: string, locale: Locale) => {
+  const normalized = path.startsWith("/") ? path : `/${path}`;
+  if (locale === defaultLocale) {
+    return normalized;
+  }
+
+  return supportedLocalizedPaths.has(normalized)
+    ? `/${locale}${normalized}`
+    : normalized;
 };
