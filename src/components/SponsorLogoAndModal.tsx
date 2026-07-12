@@ -57,7 +57,7 @@ export default function SponsorLogoAndModal(props: SponsorLogoAndModalProps) {
           <b>{props.level} </b>
           <b>{props.partnerTag}</b>
           <p id={`${contentId}-description`}
-              style={{ textAlign: "justify", marginBottom: "1.5rem" }}>
+              style={{ textAlign: "left", marginBottom: "1.5rem" }}>
             {props.description}</p>
           <footer className="p-modal__footer">
             <a href={props.url}>

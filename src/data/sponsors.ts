@@ -151,10 +151,10 @@ export const sponsors: SponsorLevel[] = [
     showPopup: true,
     list: [
       {
-        name: "Andes Technology Corporation",
+        nameKey: "supportersponsorTitleAndes",
         logoUrl: andes.src,
         url: "https://www.andestech.com/en/",
-        descriptionKey: "",
+        descriptionKey: "supportersponsorDescriptionAndes",
       },
     ],
   },
