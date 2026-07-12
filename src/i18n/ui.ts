@@ -75,6 +75,8 @@ export const ui = {
     bsponsorDescriptionONLYOFFICE: "ONLYOFFICE, an open-source office software project, focuses on advanced and secure office solutions. With over 15 million users worldwide, it is recognized for its innovation in the online office domain. The ONLYOFFICE ecosystem includes collaborative applications such as online editors for text documents, spreadsheets, presentations, forms, and PDFs, along with a room-based collaborative platform. As an international company, ONLYOFFICE has employees and contributors across the globe, with offices located in Singapore, Dallas, Shanghai, Riga, London, Belgrade, Yerevan, and Tashkent.",
     bsponsorTitleQNAP: "QNAP Systems, Inc.",
     bsponsorDescriptionQNAP: "QNAP (Quality Network Appliance Provider) is a global leader in software development, hardware design, and in-house manufacturing, delivering solutions that help businesses and individuals securely store, connect, and innovate. We drive breakthroughs in storage, networking, and smart video, and advance an Edge AI strategy that integrates edge-first deployment with cloud collaboration—enabling real-time data analysis, decision-making, and collaboration across diverse environments. QNAP is also a comprehensive cybersecurity brand, embedding data protection, anti-ransomware resilience, immutable storage, and multi-layered security into our solutions. For us, NAS has evolved beyond storage—turning NAS into the platform that drives AI, edge intelligence, and trusted data protection worldwide.",
+    supportersponsorTitleAndes: "Andes Technology Corporation",
+    supportersponsorDescriptionAndes: "As a Founding Premier member of RISC-V International and a leader in commercial CPU IP, Andes Technology ([TWSE: 6533](https://finance.yahoo.com/quote/6533.TW?p=6533.TW&ncid=stockrec); [SIN: US03420C2089](https://www.bourse.lu/security/US03420C2089/342557); [ISIN: US03420C1099](https://www.bourse.lu/security/US03420C2089/342557)) is driving the global adoption of RISC-V. Andes’ extensive RISC-V Processor IP portfolio spans from ultra-efficient 32-bit CPUs to high-performance 64-bit Out-of-Order multiprocessor coherent clusters. With advanced vector processing, DSP capabilities, the powerful Andes Automated Custom Extension (ACE) framework, end-to-end AI hardware/software stack, ISO 26262 certification with full compliance, and a robust software ecosystem, Andes unlocks the full potential of RISC-V, empowering customers to accelerate innovation across AI, automotive, communications, consumer electronics, data centers, and mobile devices. Over 20 billion Andes-powered SoCs are driving innovations globally. Discover more at [www.andestech.com](http://www.andestech.com/) and connect with Andes on [LinkedIn](https://www.linkedin.com/company/13688177/admin/dashboard/), [X (formerly Twitter)](https://x.com/Andes_Tech) , [YouTube](https://www.youtube.com/c/AndesTechnology) and [Bilibili](https://space.bilibili.com/335295020).",
   },
   "zh-tw": {
     localeName: "中文",
@@ -147,6 +149,8 @@ export const ui = {
     bsponsorDescriptionONLYOFFICE: "ONLYOFFICE 是一個國際性的開源專案，由領先的 IT 公司 Ascensio System SIA 開發。目前在中國、新加坡、英國等 7 個國家設有分公司，為全球企業與個人使用者提供高效率的文件處理與協作解決方案，深受網易、百威中國、中信集團、南京大學、中國知網等眾多企業與教育機構的青睞。ONLYOFFICE Docs 是一套功能完整的線上辦公套件，整合了文件編輯、試算表、簡報、可填寫表單以及 PDF 編輯器，並與 Microsoft Office 格式具備高度相容性。此外，還提供數百種格式與樣式設定工具，以及多元的協作功能。",
     bsponsorTitleQNAP: "威聯通科技股份有限公司",
     bsponsorDescriptionQNAP: " QNAP 命名源自於高品質網路設備製造商（Quality Network Appliance Provider），我們致力研發軟體應用，匠心優化硬體設計，並設立自有生產線，以提供全面而先進的科技解決方案。QNAP 專注於儲存、網通及智慧視訊產品創新，並持續拓展人工智慧應用，推動 Edge AI 邊緣優先、雲端協作的整合模式，協助客戶在不同場域中即時分析、決策與協同運作，充分發揮數據價值。QNAP 亦是一個全面性的資安品牌，我們將資料保護、防勒索、不可變儲存與多層資安機制融入解決方案中，確保企業營運不中斷並維持長期資料完整性。在 QNAP 的企業藍圖中，NAS 早已突破儲存裝置的框架，更是驅動人工智慧、邊緣運算與資安防護的重要平台，為全球用戶創造更大優勢與價值。",
+    supportersponsorTitleAndes: "晶心科技股份有限公司",
+    supportersponsorDescriptionAndes: "晶心科技股份有限公司于2005年成立於新竹科學園區，2017年於臺灣證交所上市 ([TWSE: 6533](https://finance.yahoo.com/quote/6533.TW?p=6533.TW&ncid=stockrec); [SIN: US03420C2089](https://www.bourse.lu/security/US03420C2089/342557); [ISIN: US03420C1099](https://www.bourse.lu/security/US03420C2089/342557))。晶心是RISC-V國際協會的創始首席會員，也是第一家推出商用RISC-V向量處理器的主流CPU供應商。為滿足當今電子設備的嚴格要求，晶心提供可配置性高的32/64位元高效能CPU核心，包含DSP、FPU、Vector、超純量  (Superscalar)、亂序執行  (Out-of-Order)、多核心及車用系列，可應用於各式ＳｏＣ與應用場景。晶心並提供功能齊全的整合開發環境和全面的軟/硬體解決方案，可幫助客戶在短時間內創新其SoC設計。截至2025年底，Andes-Embedded™ SoC累計出貨量已超過200億顆。欲瞭解更多資訊，請訪問  [https://www.andestech.com](https://www.andestech.com/)。請立即透過[LinkedIn](https://www.linkedin.com/company/13688177/)、[Facebook](https://www.facebook.com/AndesTechTW?locale=zh_TW)、[X(原 Twitter)](https://twitter.com/Andes_Tech)、[YouTube](https://www.youtube.com/c/AndesTechnology/) 以及[Bilibili](https://space.bilibili.com/335295020)追蹤晶心最新消息。",
   },
 } as const;
 
@@ -212,7 +216,9 @@ export type UiKey =
   | "bsponsorTitleONLYOFFICE"
   | "bsponsorDescriptionONLYOFFICE"
   | "bsponsorTitleQNAP"
-  | "bsponsorDescriptionQNAP";
+  | "bsponsorDescriptionQNAP"
+  | "supportersponsorTitleAndes"
+  | "supportersponsorDescriptionAndes";
 
 export const getLocaleFromUrl = (url: URL): Locale => {
   const pathLocale = url.pathname.split("/")[1];
