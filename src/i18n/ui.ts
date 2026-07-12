@@ -93,7 +93,7 @@ export const ui = {
     navProgram: "議程",
     navAbout:"關於",
     navAboutTheEvent: "關於活動",
-    navCoC: "Code of Conduct",
+    navCoC: "行為準則",
     navMenu: "選單",
     navClose: "關閉",
     navSponsors: "我們的贊助商",
