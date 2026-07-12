@@ -37,7 +37,7 @@ const t = useTranslations(locale) as (key: string) => string;
                   <SponsorLogoAndModal
                     name={item.nameKey ? t(item.nameKey) : item.name ?? ""}
                     logoImageSrc={item.logoUrl}
-                    description={item.descriptionKey ? t(item.descriptionKey) : item.description ?? ""}
+                    description={item.descriptionKey ? t(item.descriptionKey) : item.descriptionKey ?? ""}
                     url={item.url}
                     level={level.sponsorLevelName}
                     partnerTag={item?.partnerTag}

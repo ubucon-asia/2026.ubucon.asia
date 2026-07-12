@@ -1,13 +1,13 @@
 import logoPlaceHolder from "../assets/sponsors/logo_placeholder.svg";
-import ima from "../assets/sponsors/Gold/IMA.png";
-import esun from "../assets/sponsors/Gold/esunbank.png";
-import cfh from "../assets/sponsors/Gold/cfh.png";
-import qnap from "../assets/sponsors/Bronze/QNAP.png";
-import kktix from "../assets/sponsors/Bronze/KKTIX.png";
-import onlyoffice from "../assets/sponsors/Bronze/ONLYOFFICE.png";
-import andes from "../assets/sponsors/Supporter/Andes.png";
-import doit from "../assets/sponsors/SpecialThanks/doit.png";
-import sifive from "../assets/sponsors/SpecialThanks/sifive.png";
+import ima from "../assets/sponsors/Gold/IMA.jpg";
+import esun from "../assets/sponsors/Gold/esunbank.jpg";
+import cfh from "../assets/sponsors/Gold/cfh.jpg";
+import qnap from "../assets/sponsors/Bronze/QNAP.jpg";
+import kktix from "../assets/sponsors/Bronze/KKTIX.jpg";
+import onlyoffice from "../assets/sponsors/Bronze/ONLYOFFICE.jpg";
+import andes from "../assets/sponsors/Supporter/Andes.jpg";
+import doit from "../assets/sponsors/SpecialThanks/doit.jpg";
+import sifive from "../assets/sponsors/SpecialThanks/sifive.jpg";
 
 //Sponsor data structure and types
 export type SponsorItem = {
@@ -86,18 +86,16 @@ export const sponsors: SponsorLevel[] = [
         descriptionKey: "gsponsordescriptionIMA",
       },
       {
-        name: "E.SUN Bank",
+        nameKey: "gsponsorTitleESunBank",
         logoUrl: esun.src,
         url: "https://www.esunbank.com/zh-tw/personal",
-        description:
-          "",
+        descriptionKey: "gsponsordescriptionESunBank",
       },
       {
-        name: "Cathay Financial Holdings",
+        nameKey: "gsponsorTitleCFH",
         logoUrl: cfh.src,
         url: "https://www.cathayholdings.com/holdings/brand/fintech",
-        description:
-          "",
+        descriptionKey: "gsponsordescriptionCFH",
       },
     ],
   },
@@ -126,25 +124,22 @@ export const sponsors: SponsorLevel[] = [
     showPopup: true,
     list: [
       {
-        name: "KKTIX",
+        nameKey: "bsponsorTitleKKTIX",
         logoUrl: kktix.src,
         url: "https://www.kktix.com/",
-        description:
-          "",
-      },
-              {
-        name: "ONLYOFFICE",
-        logoUrl: onlyoffice.src,
-        url: "https://www.onlyoffice.com/",
-        description:
-          "",
+        descriptionKey: "bsponsorDescriptionKKTIX",
       },
       {
-        name: "QNAP Systems, Inc.",
+        nameKey: "bsponsorTitleONLYOFFICE",
+        logoUrl: onlyoffice.src,
+        url: "https://www.onlyoffice.com/",
+        descriptionKey: "bsponsorDescriptionONLYOFFICE",
+      },
+      {
+        nameKey: "bsponsorTitleQNAP",
         logoUrl: qnap.src,
         url: "https://www.qnap.com/zh-tw",
-        description:
-          "",
+        descriptionKey: "bsponsorDescriptionQNAP",
       },
     ],
   },
@@ -156,10 +151,10 @@ export const sponsors: SponsorLevel[] = [
     showPopup: true,
     list: [
       {
-        name: "Andes Technology Corporation",
+        nameKey: "supportersponsorTitleAndes",
         logoUrl: andes.src,
         url: "https://www.andestech.com/en/",
-        description: "",
+        descriptionKey: "supportersponsorDescriptionAndes",
       },
     ],
   },
@@ -175,14 +170,14 @@ export const sponsors: SponsorLevel[] = [
         logoUrl: doit.src,
         // partnerTag: "-Demo Partner",
         url: "https://doit.gov.taipei",
-        description: "",
+        descriptionKey: "",
       },
       {
         name: "SiFive",
         logoUrl: sifive.src,
         // partnerTag: "-Demo Partner",
         url: "https://www.sifive.com",
-        description: "",
+        descriptionKey: "",
       },
     ],
   },

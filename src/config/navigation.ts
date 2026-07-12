@@ -76,6 +76,10 @@ export const navigation: NavigationSettings = {
           key: "navVisas",
           path: "/venue-and-travel/visas-and-other-travel-requirements",
         },
+        {
+          key: "navAccommodation",
+          path: "/venue-and-travel/accommodation",
+        },
       ],
     },
   ],
