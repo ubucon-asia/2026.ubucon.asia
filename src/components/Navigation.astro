@@ -1,7 +1,14 @@
 ---
 import { navigation } from "../config/navigation";
 import { getSiteMetadata } from "../config/site";
-import { getLocalizedPath, locales, ui, useTranslations } from "../i18n/ui";
+import {
+    defaultLocale,
+    getLocalizedNavPath,
+    getLocalizedPath,
+    locales,
+    ui,
+    useTranslations,
+} from "../i18n/ui";
 
 const { locale } = Astro.props;
 const t = useTranslations(locale) as (key: string) => string;
@@ -16,7 +23,7 @@ const languageLinks = locales.map((item) => ({
 }));
 
 const buildHref = (item: { path: string; hash?: string }) => {
-    const base = getLocalizedPath(item.path, locale);
+    const base = getLocalizedNavPath(item.path, locale);
     return item.hash ? `${base}${item.hash}` : base;
 };
 
