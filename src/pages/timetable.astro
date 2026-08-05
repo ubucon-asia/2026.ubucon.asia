@@ -1,0 +1,37 @@
+---
+import { getSiteMetadata, siteConfig } from "../config/site";
+import { getLocaleFromUrl } from "../i18n/ui";
+
+const locale = getLocaleFromUrl(Astro.url);
+const metadata = getSiteMetadata(locale);
+const linkToTimetable = siteConfig.timetableLink.link;
+---
+
+<meta charset="utf-8" />
+
+<meta property="og:title" content="Timetable" />
+<meta property="og:site_name" content={metadata.title} />
+<meta property="og:url" content="" />
+<meta property="og:description" content={metadata.description} />
+<meta property="og:type" content="" />
+<meta property="og:image" content={siteConfig.timetableLink.socialCardImage} />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@UbuConAsia" />
+<meta name="twitter:title" content={`${metadata.title} Timetable`} />
+<meta name="twitter:description" content={metadata.description} />
+<meta name="twitter:image" content={siteConfig.timetableLink.socialCardImage} />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" href="/favicon.ico" />
+<body>
+    <p>
+        Page won't redirect if Javascript is disabled. <a href={linkToTimetable}
+            >In that case, Click here to redirect manually.</a
+        >
+    </p>
+</body>
+
+<script is:inline define:vars={{ linkToTimetable }}>
+    //redirect
+    window.location = linkToTimetable;
+</script>

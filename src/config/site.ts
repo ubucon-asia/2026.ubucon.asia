@@ -43,8 +43,8 @@ export const getSiteMetadata = (locale?: Locale) =>
 export const heroCtas: Record<Locale, HeroCtas> = {
   en: [
     {
-      label: "Call for proposals",
-      href: "/cfp",
+      label: "Timetable",
+      href: "/timetable",
     },
     {
       label: "Chat with participants",
@@ -57,8 +57,8 @@ export const heroCtas: Record<Locale, HeroCtas> = {
   ],
   "zh-tw": [
     {
-      label: "徵稿",
-      href: "/cfp",
+      label: "行程表",
+      href: "/timetable",
     },
     {
       label: "與參與者聊天",
@@ -165,6 +165,10 @@ export const getFooterContent = (locale?: Locale) =>
   footerContent[locale ?? defaultLocale] ?? footerContent[defaultLocale];
 
 export const siteConfig = {
+  timetableLink: {
+    link: "https://events.canonical.com/event/146/timetable/?layout=room#all.detailed",
+    socialCardImage: "",
+  },
   cfpLink: {
     link: "https://events.canonical.com/event/146/abstracts/",
     socialCardImage: "",
@@ -176,3 +180,88 @@ export const siteConfig = {
 } as const;
 
 export type SiteConfig = typeof siteConfig;
+
+export interface SubMenuItem {
+  link: string;
+  label: string;
+}
+
+export const WebsiteConfig = {
+  featuredSpeakers: {
+    displayOnMainPage: true,
+    indicoExportUrl:
+      "https://events.canonical.com/export/event/146.json?detail=contributions&occ=yes&pretty=yes",
+    contributionIds: [130, 97, 144, 121, 143, 92],
+    speakerIds: [
+      { db_id: 1313, user: 1348 },
+      { db_id: 1312, user: 1320 },
+      { db_id: 1345, user: 1415 },
+      { db_id: 1309, user: 1350 },
+      { db_id: 1340, user: 1346 },
+      { db_id: 1318, user: 1317 },
+    ],
+    fullSchedulesUrl: "ddd",
+  },
+  otherSpeakers: {
+    displayOnMainPage: true,
+    indicoExportUrl:
+      "https://events.canonical.com/export/event/146.json?detail=contributions&occ=yes&pretty=yes",
+    contributionIds: [
+      134, 143, 95, 98, 86, 100, 123, 131, 125, 105, 106, 116,
+      124, 137, 120, 93, 94, 102, 107, 122, 136, 135
+    ],
+    speakerIds: [
+      // 134
+      { db_id: 1339, user: 1366 },
+      { db_id: 1338, user: 1365 },
+
+      // 95
+      { db_id: 1316, user: 1319 },
+      { db_id: 1314, user: 1309 },
+      { db_id: 1315, user: 1310 },
+
+      // 98
+      { db_id: 1321, user: 1321 },
+
+      // 123
+      { db_id: 1348, user: 1359 },
+      { db_id: 1347, user: 1358 },
+
+      // 131
+      { db_id: 1337, user: 1362 },
+
+      // 125
+      { db_id: 1329, user: 1294 },
+
+      // 137
+      { db_id: 1311, user: 1202 },
+      { db_id: 1310, user: 1193 },
+
+      // 120
+      { db_id: 1346, user: 1349 },
+
+      // 93
+      { db_id: 1319, user: 1194 },
+
+      // 94
+      { db_id: 1320, user: 1318 },
+
+      // 102
+      { db_id: 1322, user: 1327 },
+
+      // 122
+      { db_id: 1327, user: 1200 },
+
+      // 136
+      {db_id:1331, user:1369},
+
+      // 135
+      { db_id: 1342, user: 1368 },
+      { db_id: 1341, user: 1367 },
+
+    ],
+
+    fullSchedulesUrl: "",
+  },
+};
+

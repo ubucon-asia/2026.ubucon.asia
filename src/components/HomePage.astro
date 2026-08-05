@@ -7,6 +7,9 @@ import HeroImage from "../assets/uca25photo.png";
 import PrimesessionImage from "../assets/primesession.jpg";
 import SpeakerImage from "../assets/speaker.jpg";
 import Sponsors from "./Sponsors.astro";
+import { WebsiteConfig } from '../config/site';
+import FeaturedSpeakers from '../components/FeaturedSpeakers.astro';
+import OtherSpeakers from '../components/OtherSpeakers.astro';
 const { locale } = Astro.props;
 const t = useTranslations(locale) as (key: string) => string;
 ---
@@ -25,7 +28,11 @@ const t = useTranslations(locale) as (key: string) => string;
                     />
                 </div>
             </div>
-            <hr class="p-rule is-fixed-width" />
+            <!-- <hr class="p-rule is-fixed-width" /> -->
+              	{WebsiteConfig.featuredSpeakers.displayOnMainPage ? (<FeaturedSpeakers/>):(<></>)}
+                <div id="other-speakers-container" class="speakers-accordion" style="display: none;">
+                    {WebsiteConfig.otherSpeakers.displayOnMainPage ? (<OtherSpeakers/>):(<></>)}
+                </div>
             <div class="p-section--shallow">
                 <div class="grid-row--50-50-on-large">
                     <div class="grid-col">
@@ -141,4 +148,44 @@ const t = useTranslations(locale) as (key: string) => string;
         </div>
     </div>
     <Sponsors locale={locale} />
+    <style>
+        .speakers-accordion {
+            transition: opacity 0.3s ease-in-out;
+        }
+    </style>
+    <script>
+    // Accordion functionality for speakers section
+    document.addEventListener('DOMContentLoaded', function() {
+        const seeAllSpeakersBtn = document.getElementById('see-all-speakers-btn');
+        const otherSpeakersContainer = document.getElementById('other-speakers-container');
+        
+        if (seeAllSpeakersBtn && otherSpeakersContainer) {
+        seeAllSpeakersBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            if (otherSpeakersContainer.style.display === 'none') {
+            otherSpeakersContainer.style.display = 'block';
+            otherSpeakersContainer.style.opacity = '0';
+            
+            setTimeout(() => {
+                otherSpeakersContainer.style.transition = 'opacity 0.3s ease-in-out';
+                otherSpeakersContainer.style.opacity = '1';
+            }, 10);
+            
+            otherSpeakersContainer.scrollIntoView({ 
+                behavior: 'smooth', 
+                block: 'start' 
+            });
+            } else {
+            otherSpeakersContainer.style.transition = 'opacity 0.3s ease-in-out';
+            otherSpeakersContainer.style.opacity = '0';
+            
+            setTimeout(() => {
+                otherSpeakersContainer.style.display = 'none';
+            }, 300);
+            }
+        });
+        }
+    });
+    </script>
 </main>
